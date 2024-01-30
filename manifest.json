@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "To Ukrainize Google",
+    "version": "1.0",
+	"icons": {
+    "128": "g.png"
+    },
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "*://*.google.com/*",
+        "storage"
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "To Ukrainize Google"
+    }
+}
