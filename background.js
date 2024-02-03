@@ -16,7 +16,7 @@ chrome.storage.sync.get('enabled', function(data) {
     if (data.enabled) {
         chrome.webRequest.onBeforeRequest.addListener(
             redirectListener,
-            {urls: ["*://*.google.com/*"], types: ["main_frame"]},
+            {urls: ["*://www.google.com/*"], types: ["main_frame"]},
             ["blocking"]
         );
     }
